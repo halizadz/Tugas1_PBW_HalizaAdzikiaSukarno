@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Produk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 0;
+        }
+
+        .container {
+            background: white;
+            width: 90%;
+            
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .table-container {
+            background: white;
+            width: 90%;
+            margin:  auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        th[colspan="2"] {
+            border-bottom: 2px solid white;
+            vertical-align: middle;
+        }
+
+        .total-row {
+            font-weight: bold;
+            background-color: #f4f4f4;
+        }s
+
+        .total-row td:last-child {
+            font-weight: bold;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Form Penjualan</h2>
+        <div class="input-group">
+            <label for="produk">Produk</label>
+            <input type="text" id="produk" placeholder="Masukkan Nama Produk">
+        </div>
+        <div class="input-group">
+            <label for="jumlah">Jumlah</label>
+            <input type="number" id="jumlah" placeholder="Masukkan Jumlah">
+        </div>
+        <div class="input-group">
+            <label for="harga">Harga</label>
+            <input type="text" id="harga" placeholder="Masukkan Harga">
+        </div>
+        <button>Tambahkan</button>
+    </div>
+
+    <div class="table-container">
+        <h2>Data Penjualan Bulanan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">No</th>
+                    <th rowspan="2">Produk</th>
+                    <th colspan="2" >Penjualan</th>
+                </tr>
+                <tr>
+                    <th>Jumlah</th>
+                    <th>Harga Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Sepatu</td>
+                    <td>50</td>
+                    <td>Rp 25.000.000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tas</td>
+                    <td>30</td>
+                    <td>Rp 15.000.000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Jam Tangan</td>
+                    <td>20</td>
+                    <td>Rp 10.000.000</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="2">Total Penjualan</td>
+                    <td>100</td>
+                    <td>Rp 50.000.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
